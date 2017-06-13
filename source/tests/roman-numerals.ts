@@ -98,7 +98,7 @@ describe('Roman Numerals', () => {
 
 		let result:number
 
-		it('should convert a roman number "LXXXVII" to a 87 number', () => {
+		it('should return 0 when there is no roman numeral', () => {
 
 			result = RomanNumerals.fromRoman("test")
 			expect(result).to.equal(0)
