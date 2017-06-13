@@ -1,0 +1,19 @@
+{
+	"name": "roman-numerals",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "mocha -r ts-node/register source/tests/roman-numerals.ts"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/chai": "^4.0.0",
+		"@types/mocha": "^2.2.41",
+		"chai": "^4.0.2",
+		"mocha": "^3.4.2",
+		"ts-node": "^3.0.6",
+		"typings": "^2.1.1"
+	}
+}
