@@ -4,7 +4,25 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"test": "mocha -r ts-node/register source/tests/roman-numerals.ts"
+		"test": "nyc mocha --compilers ts-node/register --require source-map-support/register --full-trace --bail --colors source/tests/roman-numerals.ts"
+	},
+	"nyc": {
+		"include": [
+			"source/tests/**.ts"
+		],
+		"extension": [
+			".ts",
+			".tsx"
+		],
+		"require": [
+			"ts-node/register"
+		],
+		"reporter": [
+			"text-summary",
+			"html"
+		],
+		"sourceMap": true,
+		"instrument": true
 	},
 	"author": "",
 	"license": "ISC",
@@ -15,5 +33,9 @@
 		"mocha": "^3.4.2",
 		"ts-node": "^3.0.6",
 		"typings": "^2.1.1"
+	},
+	"dependencies": {
+		"nyc": "^11.0.2",
+		"source-map-support": "^0.4.15"
 	}
 }

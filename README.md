@@ -13,7 +13,7 @@ I have used typescript for general classes and mocha-chai for unit test.
 
 ### Spike
 
-> mocha, chai, ts-node and typings require global install
+> Some modules require global install
 
 ### Package list
 
@@ -23,3 +23,5 @@ I have used typescript for general classes and mocha-chai for unit test.
 * mocha
 * ts-node
 * typings
+* source-map-support
+* nyc
