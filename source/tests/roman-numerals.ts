@@ -22,13 +22,6 @@ describe('Roman Numerals', () => {
 
 		})
 
-		it('should convert a number 8 to a roman numeral "VIII"', () => {
-
-			result = RomanNumerals.toRoman(8)
-			expect(result).to.equal('VIII')
-
-		})
-
 		it('should convert a number 5 to a roman numeral "V"', () => {
 
 			result = RomanNumerals.toRoman(5)
