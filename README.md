@@ -6,7 +6,7 @@
 
 I have used typescript for general classes and mocha-chai for unit test.
 
-### Description
+### Instructions
 
 * Install packages with yarn or npm
 * On your favorite console type npm run test
