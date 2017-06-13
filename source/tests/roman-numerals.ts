@@ -94,7 +94,7 @@ describe('Roman Numerals', () => {
 
 	})
 	
-	describe('To Roman', () => {
+	describe('From Roman', () => {
 
 		let result:number
 
