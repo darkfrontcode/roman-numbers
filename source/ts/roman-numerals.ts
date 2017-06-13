@@ -9,7 +9,7 @@ export default class RomanNumerals
 		let r:string = ''
 		n = Math.abs(n)
 
-		for (var i = 0;i<=this.decimals.length;i++)
+		for (let i = 0;i<=this.decimals.length;i++)
 		{
 			const current = this.decimals[i]
 
