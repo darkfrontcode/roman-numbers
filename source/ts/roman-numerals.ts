@@ -7,11 +7,12 @@ export default class RomanNumerals
 	public static toRoman(n:number) : string
 	{
 		let r:string = ''
+		let current: number
 		n = Math.abs(n)
 
 		for (let i = 0;i<=this.decimals.length;i++)
 		{
-			const current = this.decimals[i]
+			current = this.decimals[i]
 
 			while (n%current < n)
 			{     
@@ -26,10 +27,11 @@ export default class RomanNumerals
 	public static fromRoman(s:string) : number
 	{
 		let r:number = 0
+		let current: string
 
 		for (let i = 0;i<=this.decimals.length;i++)
 		{
-			const current = this.roman[i]
+			current = this.roman[i]
 
 			while (s.indexOf(current) === 0)
 			{
